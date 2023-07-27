@@ -9,7 +9,7 @@ class LLMS:
     def __init__(self):
         load_dotenv()
 
-        self.openAI = OpenAI(openai_api_key=os.getenv("OPENAI_API_KEY"))
+        self.openAI = OpenAI(openai_api_key=os.getenv("OPENAI_API_KEY_PAID"))
 
     def generate(self, product, topic):
         if product == 'CT':
@@ -43,6 +43,6 @@ class LLMS:
 
 if __name__ == '__main__':
     llm = LLMS()
-    # This 'Fundraiser Marathon' is the topic,
+    # This second arg is the topic,
     # we can take it from frontend and let the llm generate everything else
-    print(llm.generate('CT', 'Fundraiser Marathon'))
+    print(llm.generate('CT', 'Backoffice Support'))

@@ -352,6 +352,7 @@ def generate_instruction(topic):
     text = """
         Help me create a volunteering opportunity instance, with matching skills and causes,
         this volunteering opportunity is about """ + topic + """ for a non profit organization.
-        Make the title and description sound fun and engaging, add a lot of emojis to make it colorful.
+        Make the title and description sound fun and engaging, description should be around 4 sentences long.
+        Add a lot of emojis to make it colorful.
     """
     return text
